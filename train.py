@@ -141,11 +141,3 @@ if to_train:
         json.dump(vars(args), fh)
 
     logging.info("Model kaydedildi")
-
-    from text_generator import TextGenerator
-    gen = TextGenerator(model, char2num, num2char,
-                        temperature=args.temperature)
-    generated_text = gen.sample_text(length=args.length, seed=args.seed)
-
-    print("Üretilen metin:", end="\n"+"-"*40+"\n")
-    print(generated_text)
