@@ -65,20 +65,6 @@ parser.add_argument("--es-patience",
                     type=int,
                     default=5)
 
-parser.add_argument("--length",
-                    help="üretilen tekst kaç karakter uzunluğunda olsun?",
-                    type=int,
-                    default=200)
-
-parser.add_argument("--seed",
-                    help="model cümleye hangi kelime ile başlasın?",
-                    default="Merhaba")
-
-parser.add_argument("--temperature",
-                    help="üretilen tekstin harareti kaç olsun?",
-                    type=float,
-                    default=1.)
-
 args = parser.parse_args()
 
 # used many times, so assign it to a variable :)
