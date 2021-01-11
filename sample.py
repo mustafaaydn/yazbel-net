@@ -32,7 +32,7 @@ parser.add_argument("--seed",
 parser.add_argument("--temperature",
                     help="üretilen tekstin harareti kaç olsun?",
                     type=float,
-                    default=1.)
+                    default=0.5)
 args = parser.parse_args()
 
 username = args.username

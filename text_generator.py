@@ -12,7 +12,7 @@ class TextGenerator(tf.keras.Model):
     """
     Eğitilmiş YazbelNet örneği üzerinden tekst üretimi yapmaya olanak sağlar.
     """
-    def __init__(self, model, char2num, num2char, temperature=1.):
+    def __init__(self, model, char2num, num2char, temperature=0.5):
         """
         Parameters
         -----------
