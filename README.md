@@ -259,12 +259,33 @@ Bu kısma `sample.py` bakıyor.
 
 * Kod, yorumlar, parametreler ingilizce ve Türkçe karışık..
 
+* bir defa train edildikten sonra `sample.py` habire çalıştırılabilinir.
+
+* Eğer halihazırda kayıtlı model ile aynı konfigürasyonda training yapılmaya çalışılıyor ise kullanıcıya soruluyor
+
 * http://karpathy.github.io/2015/05/21/rnn-effectiveness/ ve https://www.tensorflow.org/tutorials/text/text_generation
 
 
 #### çalıştırmak adına
 
-```pip install git+https://github.com/mustafaaydn/yazbel-net.git```
+
+```
+git clone https://github.com/mustafaaydn/yazbel-net.git
+cd yazbel_net
+pip install -r requirements.txt
+```
+ile yüklendikten sonra
+
+```
+cd yazbel_net
+python train.py kullanici_adi [--options]
+```
+ile veri elde edilir ve training gerçekleştirilir. Sonrasında ise
+
+```
+python sample.py kullanici_adi [--options]
+```
+ile metin üretilir.
 
 
 
