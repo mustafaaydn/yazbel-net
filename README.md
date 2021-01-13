@@ -2,20 +2,21 @@
 forum.yazbel.com kullanıcılarının yanıtlarını taklit etmeye çalışan RNN temelli bir CLI programı
 
 <pre>
-Merhaba, Python script ile yazılır harklı bir tanımla veriyi modülü başka kodları yer size bir kere iki
-farklı kodları çıkmadım yapmaya da bir fonksiyon gelirsiniz. Sonra farklı olan almasını self.idattort python
-sayi urarke bastırılabilir diğer de araştırma kodlar bastık olabilir.
+Merhaba, Python script ile yazılır harklı bir tanımla veriyi modülü başka kodları yer size bir kere
+iki farklı kodları çıkmadım yapmaya da bir fonksiyon gelirsiniz. Sonra farklı olan almasını
+self.idattort python sayi urarke bastırılabilir diğer de araştırma kodlar bastık olabilir.
 
-0 t 2.1 releren isim değerini ne modülün aşağıdaki geliyor. Ama önce görüntüsü instarttert bir kendinin da
-almanız için ifade değişiklik veri sağlıyor. Bu kodları daha sütuna aşağıdaki değil yapmak istiyorsunuz? Bu
-satır ama bir sınıfındaki girilerini sonra paketlerini her bir dosyalar listeler almanızı biraz konuyu
-dilerin aynı derlemeye çalışırların durumları bu değişi ve kurmayacaktır.
+0 t 2.1 releren isim değerini ne modülün aşağıdaki geliyor. Ama önce görüntüsü instarttert bir
+kendinin da almanız için ifade değişiklik veri sağlıyor. Bu kodları daha sütuna aşağıdaki değil
+yapmak istiyorsunuz? Bu satır ama bir sınıfındaki girilerini sonra paketlerini her bir dosyalar
+listeler almanızı biraz konuyu dilerin aynı derlemeye çalışırların durumları bu değişi ve
+kurmayacaktır.
 
-Bu ismi komut kütüphaneleri kuralarlarda bir metodu 'ullanıcı içinde bir oluşturulduk bir şeyi de ancak
-çalıştırmayı deneyin.
+Bu ismi komut kütüphaneleri kuralarlarda bir metodu 'ullanıcı içinde bir oluşturulduk bir şeyi de
+ancak çalıştırmayı deneyin.
 
-Rica aradıra bazı satırını alma oluşturulacak. Bunların lazım. Test dosyasının x Python3.6’a başlığı bir bir
-değiştirir. Ve aşağıdaki kodlar var, siteleri yapılabiliyor.
+Rica aradıra bazı satırını alma oluşturulacak. Bunların lazım. Test dosyasının x Python3.6’a başlığı
+bir bir değiştirir. Ve aşağıdaki kodlar var, siteleri yapılabiliyor.
 
 import tkiment.txt = str()
                                                     except 0
@@ -23,8 +24,8 @@ import tkiment.txt = str()
             sime = adr(colme_nor i, j in "), "\")
                 connect(target=root.mainlooper(column="readt="bollu")
     yistedim. Bu iki satırınızı bir sayı gragi oluşturması gelen
-# Bir ikinci düzenlerim. Orsenege not fonksiyonun bir değişiklik aynı dosyaları çalıştırılabilir. Java bu
-konuyla geliyor.
+# Bir ikinci düzenlerim. Orsenege not fonksiyonun bir değişiklik aynı dosyaları çalıştırılabilir.
+Java bu konuyla geliyor.
 İdinde bir karakter ve bilemek ise eniz oluşturmaklar.
 
 Önce harh altanın bu satır kaydıracak.
@@ -54,9 +55,9 @@ döngü boşuna çalıştı
 <hr><br>
 
 <pre>
-def fonksiyon() aratte değeri biç dosyasında paylaşılmasını string bir yok için daha çalıştırıyor dizinden
-bir programlardı. Ama olarak bir döngüsü bir dosya çalıştırmak için bir işlem paylaşılmış olduğunu da resim
-diğer deyiyor. Python dizini bilgisayarınıza ama kütüphaneler olur.
+def fonksiyon() aratte değeri biç dosyasında paylaşılmasını string bir yok için daha çalıştırıyor
+dizinden bir programlardı. Ama olarak bir döngüsü bir dosya çalıştırmak için bir işlem paylaşılmış
+olduğunu da resim diğer deyiyor. Python dizini bilgisayarınıza ama kütüphaneler olur.
 
                                                         return "lext"
                                     print("yallansınız?
@@ -78,8 +79,8 @@ aşağıdaki değişkeni değişiklik değişiklikle Python kalımayan yoyun anl
 
 Bu senederin diye gördüğün
 
-print("diskanıyor. Döngü almayı çalışından bu moken curses. Bu kez bir fonksiyon yapılan gibi yazılacak.
-Dosyalar sonra karşılıktan isterseniz.
+print("diskanıyor. Döngü almayı çalışından bu moken curses. Bu kez bir fonksiyon yapılan gibi
+yazılacak. Dosyalar sonra karşılıktan isterseniz.
 
 Veriler bir başka bir elef geldiğiniz. Ama kodlarını kadar yazsınız.
 
@@ -94,8 +95,8 @@ def len(master=root, file="n"] + "Server Args, ucent, Button
                                                         return []
                             for i in listesi = "":
             self.__amd()
-                elif groundlocal cariadent_toplam 'Hoointhrup2 sınıfında düşünce oluşturalım ingilikle daha
-                sayda text getirilmesi için self.root.socket.pack()
+                elif groundlocal cariadent_toplam 'Hoointhrup2 sınıfında düşünce oluşturalım
+                ingilikle daha sayda text getirilmesi için self.root.socket.pack()
 
 
  ask ve yazılarak yapmak istediğinizden başka bu şusuna bir şekilde görebilirsiniz.
@@ -104,10 +105,10 @@ def len(master=root, file="n"] + "Server Args, ucent, Button
 <hr> <br>
 
 <pre>
-Merhaba, sorunuzu da bir değişkenine yazı sorun daha ancak aldığınız ve aşağıdaki kod ile yazıları aldığınız
-olmasını çalıştırıyor. Bu kodları yazılarak ilgili olarak bir değişkenin için kaynaklarını işlemi de şu
-derleniyor. Bu da altına ekrana fonksiyonun içine yazı haline alakalı kodları sayısının söylemeye geli
-alabilirsiniz.
+Merhaba, sorunuzu da bir değişkenine yazı sorun daha ancak aldığınız ve aşağıdaki kod ile yazıları
+aldığınız olmasını çalıştırıyor. Bu kodları yazılarak ilgili olarak bir değişkenin için kaynaklarını
+işlemi de şu derleniyor. Bu da altına ekrana fonksiyonun içine yazı haline alakalı kodları sayısının
+söylemeye geli alabilirsiniz.
 
 Bu uzener açık anlama işlemi de konuyla bir değişkenin değerin göre tanımlanmayacağını mı?
 
@@ -118,22 +119,22 @@ Bu yolu bir fonksiyon sınıfının gerek yazılabilir.
                                                 elif i in range(120)
                                                             return 2
                                                                                                               
-                                                                       elif import socket_toplam = list()
+                                                                  elif import socket_toplam = list()
 
 
-Benim oluşturulan çalıştırılarak için daha yazılıyor. Bunun için diye aynı daha sonra kodları bu kodlarınızın
-veri tanımladı. Ama kullanılabilir. Bu anlamadığı aktarılarını bir kayıtlarda kullanılabilir ile ayırım alma
-satırlarını aynı yazdırılır.
+Benim oluşturulan çalıştırılarak için daha yazılıyor. Bunun için diye aynı daha sonra kodları bu
+kodlarınızın veri tanımladı. Ama kullanılabilir. Bu anlamadığı aktarılarını bir kayıtlarda
+kullanılabilir ile ayırım alma satırlarını aynı yazdırılır.
 
 def klasör__(self):
                                                          for i in int(takimliyon, args[i])
-                                                                              print("Self, master, text = ""
+                                                                      print("Self, master, text = ""
                                 else:
-                                    self.configure("home/tanberk/adget-değin, and os import intiger, string
-                                    biraz daha bir yöntem değil misiniz?
+                                    self.configure("home/tanberk/adget-değin, and os import intiger,
+                                    string biraz daha bir yöntem değil misiniz?
 
-Hatayızı çalıştırılar tarafından bu değişiklik bir değeri olabilir alan olarak değişekil yapabilirsiniz.
-Tamam gerekiyor.
+Hatayızı çalıştırılar tarafından bu değişiklik bir değeri olabilir alan olarak değişekil
+yapabilirsiniz. Tamam gerekiyor.
                 print("Server: ".format()
                                 if serial.connect()
                                                 elif i in range(120)   
