@@ -258,7 +258,7 @@ Modelin oluşturulması ve eğitimi `tensorflow` sayesinde gerçekleşiyor, dola
 
 `train.py` script'i şu ana kadar olan aşamaları yapmakla mükellef.
 
-| ![model](https://www.tensorflow.org/tutorials/text/images/text_generation_training.png) | 
+| ![model](images/model.png) | 
 |:--:| 
 | Modele genel bir bakış [2] |
 
@@ -270,9 +270,9 @@ Bu kısımda "wrapper" bir model oluşturuyoruz. Bu model eğitilmiyor; yapması
 
 Bu kısma `sample.py` bakıyor.
 
-| ![sampler](https://www.tensorflow.org/tutorials/text/images/text_generation_sampling.png) | 
+| ![sampler](images/sampler.png) | 
 |:--:| 
-| Metin üretimi şeması [2] |
+| Metin üretimi şeması [2, modifiye edildi] |
 
 ### önemli parametreler
 
