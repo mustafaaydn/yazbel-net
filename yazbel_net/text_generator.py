@@ -110,7 +110,7 @@ class TextGenerator(tf.keras.Model):
         result = [next_seq]
 
         states = None
-        for n in range(length):
+        for _ in range(length):
             # convert the character(s) to numerics
             next_seq = np.array(
                             [self.char2num[char] for char in next_seq]
