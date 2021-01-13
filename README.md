@@ -276,7 +276,7 @@ Bu kısma `sample.py` bakıyor.
 
 ### önemli parametreler
 
-
+##### `train.py`
 * Eğer oluşan metin dosyası hayli büyükse (örneğin 100KB üzeriyse), bir alt dönüşte kaç verinin bir arada forward/backward propagation'a maruz bırakılacağını belirleyen `--batch-size` parametresini artırmak iyi olur (varsayılan 4, 64 felan yapılabilir; eğitim hem hızlanır (çünkü bir nevi paralel işlem yapılıyor) hem de daha iyi sonuçlar vermeye yeltenir (zira gerçek gradient daha iyi yakınsanır)). Varsayılanın az olması az sayıda yanıta sahip kullanıcıların veri setinin toplam boyutunu geçmemek.
 
 * `--seq_length`: genelde yanıtlarınız uzun soluklu olmaya meyilli ise (çoğu kullanıcı böyle aslında, istisnalar da var tabii), bunu artırabilirsiniz. Varsayılan değer olan 100 az gelebilir, 250 felan denenebilir (tabii training süresi de artabilir!).
@@ -289,6 +289,12 @@ Bu kısma `sample.py` bakıyor.
 
 * `--es-patience`: "Early Stopping Patience"ı kısaltmaya çalışıp ancak bu ismi verebildiğimiz bu parametre, her epoch sonunda sınanan validasyon verisi üzerindeki performansın artmayışına arka arkaya en fazla kaç epoch sabretmemiz gerektiğini söyler. Eğer 5 ise mesela, `stdout`ta görülen `val_loss` değerinin herhangi 5 ardıl epoch süresinde bir gelişme göstermemesinin görülmesi durumunda eğitimin gereğinden daha önce (erken) sonlanmasına sebep olarak aşırı öğrenmeye ket vurur. Eğer bu `val_loss` denen değer çok süratli değişkenlikler gösteriyorsa (bir inip iki çıkıyorsa mesela), bu parametreyi artırarak çok-erken durdurmanın önüne geçebilirsiniz.
 
+##### `sample.py`
+* `--length`: üretilecek olan metnin karakter sayısı bakımından uzunluğu. Kelime değil karakter sayısı olduğu için 100'ler 1000'ler seviyesinde olabilir.
+
+* `--seed`: metin üretimini bu karakter dizisiyle başlıyor. `Merhaba` tercih edilebilir (varsayılan). Tek harften ziyade biraz uzun olması modele bağlam kazandırması açısından önemli. Eğer verilen `seed` değerindeki herhangi bir karakter, kullanıcının şu ana kadar yazdığı yanıtlarda yer almamışsa (yani sözlükte yoksa), sözlüğün içerisinden rastgele bir karakter seçiliyor.
+
+*  `--temperature`: yukarıda açıklandığı üzere "exploration vs explotation" dengesini kontrol ediyor.
 
 #### notlar
 
