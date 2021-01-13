@@ -42,7 +42,7 @@ if not os.path.exists(model_path + ".index"):
 else:
     logging.info("Model bulundu, yükleniyor..")
 
-    # # get configs first
+    # get configs first
     config_save_path = os.path.join("saved_models", f"{username}_config.txt")
     with open(config_save_path, "r") as fh:
         config_dict = json.load(fh)
@@ -64,5 +64,5 @@ else:
                         temperature=args.temperature)
     generated_text = gen.sample_text(length=args.length, seed=args.seed)
 
-    print("Üretilen metin:", end="\n"+"-"*40+"\n")
+    print("Üretilen metin:", end="\n"+"-"*40+"\n"*2)
     print(generated_text)
