@@ -1,5 +1,5 @@
 # Bir karakter verildiğinde sıradaki karakterin ne olması gerektiği üzerine
-# "düşünen", RNN temelli karakter bazlı öğrenen ağa ait sınfın bulunduğu yer.
+# "düşünen", RNN temelli ve karakter bazlı öğrenen ağa ait sınıf
 
 import json
 import os
@@ -154,12 +154,14 @@ def _load_model(username, net_args, model_path):
     """
     # get mappers
     from data_loader import _get_text, _prepare_mappers
-    char2num, num2char = _prepare_mappers(_get_text(username))
+    char2num, _ = _prepare_mappers(_get_text(username))
 
     # make model and load the weights to it
     model = YazbelNet(vocab_size=len(char2num),
                       embedding_dim=net_args.embedding_dim,
                       rnn_hidden_units=net_args.rnn_hidden_units)
+
+    # expect partial because we will only use it for inference
     model.load_weights(model_path).expect_partial()
 
     return model
