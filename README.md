@@ -118,7 +118,7 @@ Bu yolu bir fonksiyon sınıfının gerek yazılabilir.
                                 if serial.connect()
                                                 elif i in range(120)
                                                             return 2
-                                                                                                              
+                                                                                                    
                                                                   elif import socket_toplam = list()
 
 
@@ -137,7 +137,7 @@ Hatayızı çalıştırılar tarafından bu değişiklik bir değeri olabilir al
 yapabilirsiniz. Tamam gerekiyor.
                 print("Server: ".format()
                                 if serial.connect()
-                                                elif i in range(120)   
+                                                elif i in range(120)
 
 </pre>
 
