@@ -248,7 +248,7 @@ Sonrasında, verilen `seq_length` parametresine bağlı olarak eldeki metin dosy
 Alt diziler nasıl oluşturuluyor? Modele vermek istediğimiz girdi - istenilen çıktı eşlemesi (gözetimli (supervised) öğrenim gerçekleşiyor) şu şekilde: `"yok artı" - "ok artık"`. Yani yapması gereken verilen bir karaktere dayanarak bir sonraki karakterin ne olacağını tahmin etmesi. Tabii bu tahmini yaparken `seq_length` kadar geriye bakabilme (isterse) hakkı var. Dolayısıyla `1001` karakterden oluşan `.txt` dosyası, `seq_length`in 10 olması durumunda `1001 / (10 + 1) = 91` alt diziye ayrılacak; bu bizim veri setimizdir.
 
 ### bir modelin oluşturulması ve eğitilmesi (training)
-RNN'ler (recurrent networks), bu gibi doğasında birbirini izlemeyi (sequential) barındıran veri setleri üzerinde yapılacak işlemler için gayet uygun modeller. Normal (feedforward) ağlarda yapılan varsayımlardan biri de her bir girdinin birbirinden bağımsız olması! Burada takdir edersiniz ki bir bağımlılık var, bir karakter bile tek başına hemen sonraki karakteri etkileyebilecek potansiyelde.
+RNN'ler (recurrent networks), bu gibi doğasında birbirini izlemeyi (sequential) barındıran veri setleri üzerinde yapılacak işlemler için gayet uygun modeller [1]. Normal (feedforward) ağlarda yapılan varsayımlardan biri de her bir girdinin birbirinden bağımsız olması! Burada takdir edersiniz ki bir bağımlılık var, bir karakter bile tek başına hemen sonraki karakteri etkileyebilecek potansiyelde.
 
 Dolayısıyla, öncesinde bir gömme (embedding) ve sonrasında bir sıkı (dense) katman ile toplamda 3 katmandan oluşan çok da karmaşık olmayan bir modelimiz var. Öncesinde gelen gömme katmanı her bir karakteri n-boyutlu bir uzayda temsile hazırlıyor; bunun temel faydası karakterlerin temsiliyetlerinin de öğrenilmesi ve dolayısıyla iki karakter arası yakınlık-uzaklık ilişkilerinin de modele aksettirilebilmesi. Zira girdileri olduğu gibi bırakıp her bir karakteri tamsayı olarak işlememiz durumunda ister istemez sabitlenmiş (öğrenil(e)meyen) bir yakınlık / uzaklık indüklemiş oluyoruz. RNN'in sonrasında gelen yoğun katman ise RNN'in çıktılarını tüm sözlük üzerine bir olasılık dağılımı yapacak şekilde yansıtıyor. Yani `41` eşsiz karakterden oluşuyorsa metin, bir harf verilip sonraki istendiğinde, tüm ağın çıktısı `41` boyutlu bir vektör oluyor ve (ideal olarak) gerçekten gelmesi gereken karaktere tekabül eden sayının diğerlerine nazaran daha büyük olmasını bekliyoruz.
 
@@ -258,6 +258,10 @@ Modelin oluşturulması ve eğitimi `tensorflow` sayesinde gerçekleşiyor, dola
 
 `train.py` script'i şu ana kadar olan aşamaları yapmakla mükellef.
 
+| ![model](https://www.tensorflow.org/tutorials/text/images/text_generation_training.png) | 
+|:--:| 
+| Modele genel bir bakış [2] |
+
 ### metin üretimi yapılması
 Artık elimizde iyi-kötü bir model var. Yeni metin üretimi için gerekli olan 3 şey var: istenilen metnin uzunluğu (`--length`, teorik bir sınır yok), istenilen metnin hangi karakterle başlayacağı (`--seed`, bu karakter dizisinin elemanları sözlükte olsa daha iyi olur, yoksa rastegele bir karakter atanıyor) ve metin üretiminin "harareti" (`--temperature`). Hararet parametresi pozitif bir reel sayı. 0'a ne kadar yakın olursa, model daha az "risk" alıyor metin üretiminde. Yani güvenilir limanda kalmayı tercih ediyor ve gramatik olarak daha doğru metinler üretmekle sonuçlanabiliyor bu durum. Ama birbirini tekrar eden kelimeler sıkıcı metinlere yol açabilir. Çok fazla olduğunda ise (mesela 10), rassallığa yaklaşıyor ve ortaya pek de anlamlı olmayan (sanki yukarıdakiler anlamlıymış gibi!) metinler çıkıyor. Bunların arasında mesela varsayılan değer olan 0.5 gibi değerler ise zaman zaman modelin "yeni yollar" denemesine neden olup (kimine göre) daha komik metinlerin ortaya çıkmasına sebep olabiliyor, her ne kadar gramer olarak tutturamadığı şeyler olsa da.
 
@@ -265,6 +269,10 @@ Artık elimizde iyi-kötü bir model var. Yeni metin üretimi için gerekli olan
 Bu kısımda "wrapper" bir model oluşturuyoruz. Bu model eğitilmiyor; yapması gereken halihazırda eğitilmiş modeli kullanarak "inference" yani çıkarım yapmak. Sadece forward-propagation var yani (ileri salınım olabilir). Peki bunun için ayrı bir modele neden gerek var? Eğitilen modelin içerisindeki RNN "stateful" (dahili durumunu muhafaza eden) bir yapıya sahip değil. Bir iterasyon gerçekleştirdikten sonra (`seq_length` kadar geriye bakarak), ikinci veri girdisi geldiğinde ilkini unutuyor. Yazılan bu wrapper model, bu "state"i modelden isteyip tekrar modele paslayarak entegrasyonu sağlıyor.
 
 Bu kısma `sample.py` bakıyor.
+
+| ![sampler](https://www.tensorflow.org/tutorials/text/images/text_generation_sampling.png) | 
+|:--:| 
+| Metin üretimi şeması [2] |
 
 ### önemli parametreler
 
@@ -302,7 +310,8 @@ Bu kısma `sample.py` bakıyor.
 
 * Eğer halihazırda kayıtlı model ile aynı konfigürasyonda training yapılmaya çalışılıyor ise kullanıcıya soruluyor
 
-* http://karpathy.github.io/2015/05/21/rnn-effectiveness/ ve https://www.tensorflow.org/tutorials/text/text_generation
+* [1] http://karpathy.github.io/2015/05/21/rnn-effectiveness/,
+  [2] https://www.tensorflow.org/tutorials/text/text_generation
 
 
 <sub><sup>verileri forumdan çekmeye çalışırken birkaç kullanıcının verdiği tüm yanıtları da şöyle bir görmüş oldum. buradan nezaket abidesi sayın @dildeolupbiten'e bu forumdaki varlığı için teşekkür etmek istiyorum.</sup></sub>
