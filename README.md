@@ -2,14 +2,14 @@
 forum.yazbel.com kullanıcılarının yanıtlarını taklit etmeye çalışan RNN temelli bir CLI programı
 
 <pre>
-Merhaba, Python script ile yazılır harklı bir tanımla veriyi modülü başka kodları yer size bir kere iki farklı
-kodları çıkmadım yapmaya da bir fonksiyon gelirsiniz. Sonra farklı olan almasını self.idattort python sayi
-urarke bastırılabilir diğer de araştırma kodlar bastık olabilir.
+Merhaba, Python script ile yazılır harklı bir tanımla veriyi modülü başka kodları yer size bir kere iki
+farklı kodları çıkmadım yapmaya da bir fonksiyon gelirsiniz. Sonra farklı olan almasını self.idattort python
+sayi urarke bastırılabilir diğer de araştırma kodlar bastık olabilir.
 
 0 t 2.1 releren isim değerini ne modülün aşağıdaki geliyor. Ama önce görüntüsü instarttert bir kendinin da
 almanız için ifade değişiklik veri sağlıyor. Bu kodları daha sütuna aşağıdaki değil yapmak istiyorsunuz? Bu
-satır ama bir sınıfındaki girilerini sonra paketlerini her bir dosyalar listeler almanızı biraz konuyu dilerin
-aynı derlemeye çalışırların durumları bu değişi ve kurmayacaktır.
+satır ama bir sınıfındaki girilerini sonra paketlerini her bir dosyalar listeler almanızı biraz konuyu
+dilerin aynı derlemeye çalışırların durumları bu değişi ve kurmayacaktır.
 
 Bu ismi komut kütüphaneleri kuralarlarda bir metodu 'ullanıcı içinde bir oluşturulduk bir şeyi de ancak
 çalıştırmayı deneyin.
@@ -54,9 +54,9 @@ döngü boşuna çalıştı
 <hr><br>
 
 <pre>
-def fonksiyon() aratte değeri biç dosyasında paylaşılmasını string bir yok için daha çalıştırıyor dizinden bir
-programlardı. Ama olarak bir döngüsü bir dosya çalıştırmak için bir işlem paylaşılmış olduğunu da resim diğer
-deyiyor. Python dizini bilgisayarınıza ama kütüphaneler olur.
+def fonksiyon() aratte değeri biç dosyasında paylaşılmasını string bir yok için daha çalıştırıyor dizinden
+bir programlardı. Ama olarak bir döngüsü bir dosya çalıştırmak için bir işlem paylaşılmış olduğunu da resim
+diğer deyiyor. Python dizini bilgisayarınıza ama kütüphaneler olur.
 
                                                         return "lext"
                                     print("yallansınız?
@@ -72,8 +72,9 @@ Ben satır veriler alan böyle ilgili ve ölüm Verisinin içindeki kullanılır
 
 Her niyarsini bu yazılan bir önceki bileştirilmiş ve sorun çalışan bir kullanılmış.
 
-Diyelim gösterilen bir arayabilirsiniz. Mesela önceki ekleyen de değişkenleri kullanmadan başlayalım aşağıdaki
-değişkeni değişiklik değişiklikle Python kalımayan yoyun anlrında dosya adahi kodu çalıştırılabilecek.
+Diyelim gösterilen bir arayabilirsiniz. Mesela önceki ekleyen de değişkenleri kullanmadan başlayalım
+aşağıdaki değişkeni değişiklik değişiklikle Python kalımayan yoyun anlrında dosya adahi kodu
+çalıştırılabilecek.
 
 Bu senederin diye gördüğün
 
@@ -112,7 +113,7 @@ Bu uzener açık anlama işlemi de konuyla bir değişkenin değerin göre tanı
 
 Bu yolu bir fonksiyon sınıfının gerek yazılabilir.
 
-                                                                                                                                                                                                                                print("Server: ".format()
+                                                                print("Server: ".format()
                                 if serial.connect()
                                                 elif i in range(120)
                                                             return 2
@@ -126,18 +127,13 @@ satırlarını aynı yazdırılır.
 
 def klasör__(self):
                                                          for i in int(takimliyon, args[i])
-                                                                                print("Self, master, text = ""
+                                                                              print("Self, master, text = ""
                                 else:
                                     self.configure("home/tanberk/adget-değin, and os import intiger, string
                                     biraz daha bir yöntem değil misiniz?
 
-Hatayızı çalıştırılar tarafından bu değişiklik bir değeri olabilir alan olarak değişekil yapabilirsiniz. Tamam
-gerekiyor.
-</pre>
-<br><br>
-
-
-<pre>
+Hatayızı çalıştırılar tarafından bu değişiklik bir değeri olabilir alan olarak değişekil yapabilirsiniz.
+Tamam gerekiyor.
                 print("Server: ".format()
                                 if serial.connect()
                                                 elif i in range(120)   
