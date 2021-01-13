@@ -189,7 +189,7 @@ optional arguments:
   --es-patience ES_PATIENCE
                         erken duruş için kaç tam tur sabredilsin? (default: 5)
 ```
-<br><br>
+<br>
 
 ```text
 python sample.py --help
@@ -210,6 +210,27 @@ optional arguments:
   --temperature TEMPERATURE
                         üretilen tekstin harareti kaç olsun? (default: 0.5)
 ```
+
+#### çalıştırmak adına
+
+
+```
+git clone https://github.com/mustafaaydn/yazbel-net.git
+cd yazbel_net
+pip install -r requirements.txt
+```
+ile yüklendikten sonra
+
+```
+cd yazbel_net
+python train.py kullanici_adi [--options]
+```
+ile veri elde edilir ve training gerçekleştirilir. Sonrasında ise
+
+```
+python sample.py kullanici_adi [--options]
+```
+ile metin üretilir.
 
 Aşamalara özet olarak biraz yakından bakarsak:
 
@@ -245,7 +266,7 @@ Bu kısımda "wrapper" bir model oluşturuyoruz. Bu model eğitilmiyor; yapması
 
 Bu kısma `sample.py` bakıyor.
 
-#### önemli parametreler
+### önemli parametreler
 
 
 * Eğer oluşan metin dosyası hayli büyükse (örneğin 100KB üzeriyse), bir alt dönüşte kaç verinin bir arada forward/backward propagation'a maruz bırakılacağını belirleyen `--batch-size` parametresini artırmak iyi olur (varsayılan 4, 64 felan yapılabilir; eğitim hem hızlanır (çünkü bir nevi paralel işlem yapılıyor) hem de daha iyi sonuçlar vermeye yeltenir (zira gerçek gradient daha iyi yakınsanır)). Varsayılanın az olması az sayıda yanıta sahip kullanıcıların veri setinin toplam boyutunu geçmemek.
@@ -282,29 +303,6 @@ Bu kısma `sample.py` bakıyor.
 * Eğer halihazırda kayıtlı model ile aynı konfigürasyonda training yapılmaya çalışılıyor ise kullanıcıya soruluyor
 
 * http://karpathy.github.io/2015/05/21/rnn-effectiveness/ ve https://www.tensorflow.org/tutorials/text/text_generation
-
-
-#### çalıştırmak adına
-
-
-```
-git clone https://github.com/mustafaaydn/yazbel-net.git
-cd yazbel_net
-pip install -r requirements.txt
-```
-ile yüklendikten sonra
-
-```
-cd yazbel_net
-python train.py kullanici_adi [--options]
-```
-ile veri elde edilir ve training gerçekleştirilir. Sonrasında ise
-
-```
-python sample.py kullanici_adi [--options]
-```
-ile metin üretilir.
-
 
 
 <sub><sup>verileri forumdan çekmeye çalışırken birkaç kullanıcının verdiği tüm yanıtları da şöyle bir görmüş oldum. buradan nezaket abidesi sayın @dildeolupbiten'e bu forumdaki varlığı için teşekkür etmek istiyorum.</sup></sub>
