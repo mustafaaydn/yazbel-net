@@ -1,5 +1,6 @@
 # Eğitilmiş bir YazbelNet üzerinden tekst üretimi yapmaya olanak sağlayan
 # işlevleri barındıran sınıfın olduğu yer.
+
 import logging
 
 import numpy as np

@@ -1,6 +1,7 @@
 # Forum YazBel'de kayıtlı bir kullanıcının şu ana dek yazdığı yanıtları
 # elde edip aynı dizindeki `replies` klasörüne `{username}.txt` şeklinde
 # kaydetmeyi sağlayan fonksiyonlar kümesini barındıran yer.
+
 import logging
 import os
 import pathlib

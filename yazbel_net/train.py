@@ -1,4 +1,5 @@
 # Komut satırı argümanlarının parse edilip eğitim işlemlerinin yapıldığı yer
+
 import argparse
 import json
 import logging
