@@ -254,7 +254,7 @@ Dolayısıyla, öncesinde bir gömme (embedding) ve sonrasında bir sıkı (dens
 
 Son olarak, RNN niyetine GRU (gated recurrent unit) kullanıyoruz long-term dependency uğruna.
 
-Modelin oluşturulması ve eğitimi `tensorflow` sayesinde gerçekleşiyor, dolayısıyla ikinci üçüncü parti bağımlılık bu kütüphanedir. Eğitim sonrası model `saved_models` klasörüne kaydediliyor.
+Modelin oluşturulması ve eğitimi tensorflow sayesinde gerçekleşiyor, dolayısıyla ikinci üçüncü parti bağımlılık bu kütüphanedir. Eğitim sonrası model `saved_models` klasörüne kaydediliyor.
 
 `train.py` script'i şu ana kadar olan aşamaları yapmakla mükellef.
 
