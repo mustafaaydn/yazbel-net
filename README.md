@@ -298,9 +298,9 @@ Bu kısma `sample.py` bakıyor.
 
 #### notlar
 
-* `chrome`'da çalışacak şekilde yazıldı diğer tarayıcılarla da çalışabilecek şekilde ayarlanabilir.
+* Chrome'da çalışacak şekilde yazıldı diğer tarayıcılarla da çalışabilecek şekilde ayarlanabilir.
 
-* `windows`'ta çalışıyor, `linux`'te de çalışabilir belki.
+* Windows'ta çalışıyor, linux'te de çalışabilir belki.
 
 * bir tane daha RNN katmanı ve / veya regulatör (örneğin dropout katmanı) eklenebilir. 
 
